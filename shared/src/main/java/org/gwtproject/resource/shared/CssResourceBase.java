@@ -22,5 +22,5 @@ package org.gwtproject.resource.shared;
  * @deprecated with no replacement
  */
 // TODO(unnurg): Try to get rid of the global obfuscation scheme and delete this interface.
-@Deprecated // (since="gwt-3.0.0", forRemoval=true)
+@Deprecated // (since = "gwt-3.0.0", forRemoval = true)
 public interface CssResourceBase extends ResourcePrototype { }

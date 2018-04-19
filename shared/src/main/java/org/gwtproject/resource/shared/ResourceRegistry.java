@@ -18,38 +18,25 @@ package org.gwtproject.resource.shared;
 import java.util.List;
 
 /**
- * This is an extension of ClientBundle that allows for name-based lookup of
+ * This is an extension of resource bundle that allows for name-based lookup of
  * resources. Note that the use of the methods defined within this interface
  * will prevent the compiler from pruning any of the resources declared in the
- * ClientBundle.
- * 
- * @deprecated use {@link ResourceRegistry} instead
+ * bundle.
  */
-@Deprecated // (since = "gwt-3.0.0", forRemoval = true)
-public interface ClientBundleWithLookup extends ClientBundle, ResourceRegistry {
+public interface ResourceRegistry {
 
   /**
    * Find a resource by the name of the function in which it is declared.
    * 
    * @param name the name of the desired resource
    * @return the resource, or <code>null</code> if no such resource is defined.
-   * 
-   * @deprecated use {@link #get(String)} instead
    */
-  @Deprecated
-  default ResourcePrototype getResource(String name) {
-    return get(name);
-  }
+  ResourcePrototype get(String name);
 
   /**
    * A convenience method to iterate over all ResourcePrototypes contained in
-   * the ClientBundle.
-   * 
-   * @deprecated use {@link #getAll()} instead
+   * the bundle.
    */
-  @Deprecated
-  default ResourcePrototype[] getResources() {
-    List<ResourcePrototype> all = getAll();
-    return all.toArray(new ResourcePrototype[all.size()]);
-  }
+  List<ResourcePrototype> getAll();
+  
 }

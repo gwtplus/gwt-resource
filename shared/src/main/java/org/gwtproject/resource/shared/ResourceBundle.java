@@ -23,7 +23,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Annotation for ClientBundles. Triggers annotation processor
+ * Annotation for resource bundles. Triggers annotation processor
  */
 @Documented
 @Retention(RUNTIME)

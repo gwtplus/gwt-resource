@@ -1,5 +1,5 @@
 /*
- * Copyright 2008 Google Inc.
+ * Copyright 2009 Google Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -17,33 +17,29 @@ package org.gwtproject.resource.shared;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
+import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * The use of this interface is similar to that of ImageBundle. Declare
- * no-argument functions that return subclasses of {@link ResourcePrototype},
- * which are annotated with {@link ClientBundle.Source} annotations specifying
- * the class-path location of the resource to include in the output. At runtime,
- * the functions will return an object that can be used to access the data in
- * the original resource.
- * 
- * @deprecated use {@link ResourceBundle} annotation instead
+ * Specifies the class-path location of the resource or resources associated
+ * with the {@link ResourcePrototype}.
  */
-@Deprecated // (since = "gwt-3.0.0", forRemoval = true)
-public interface ClientBundle {
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+@Repeatable(Path.List.class)
+public @interface Path {
+  String value();
+  
   /**
-   * Specifies the class-path location of the resource or resources associated
-   * with the {@link ResourcePrototype}.
-   * 
-   * @deprecated use {@link Path} instead
+   * List of {@link Path}s
    */
   @Documented
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.METHOD)
-  @Deprecated
-  public @interface Source {
-    String[] value();
+  @interface List {
+    Path[] value();
   }
 }
