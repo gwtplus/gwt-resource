@@ -1,0 +1,2 @@
+# gwt-resource
+GWT Resources
