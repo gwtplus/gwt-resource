@@ -28,6 +28,7 @@ import org.gwtproject.resource.client.NestedBundleTest;
 import org.gwtproject.resource.client.TextResourceTest;
 import org.gwtproject.resource.client.gss.AutoConversionTest;
 import org.gwtproject.resource.client.gss.DebugObfuscationStyleTest;
+import org.gwtproject.resource.client.gss.GssResourceRTLTest;
 import org.gwtproject.resource.client.gss.GssResourceTest;
 import org.gwtproject.resource.client.gss.PrettyObfuscationStyleTest;
 import org.gwtproject.resource.client.gss.StableNoTypeObfuscationStyleTest;
@@ -57,6 +58,7 @@ public class ResourceGwtSuite {
     // GSS
     suite.addTestSuite(AutoConversionTest.class);
     suite.addTestSuite(GssResourceTest.class);
+    suite.addTestSuite(GssResourceRTLTest.class);
     suite.addTestSuite(DebugObfuscationStyleTest.class);
     suite.addTestSuite(PrettyObfuscationStyleTest.class);
     suite.addTestSuite(StableShortTypeObfuscationStyleTest.class);

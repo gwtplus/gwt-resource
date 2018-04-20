@@ -36,7 +36,7 @@ public class GssResourceRTLTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.resources.GssResourceRTLTest";
+    return "org.gwtproject.resource.GssResourceRTLTest";
   }
 
   public void test() {
