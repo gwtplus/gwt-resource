@@ -17,6 +17,7 @@ package org.gwtproject.resource.client;
 
 import org.gwtproject.resource.shared.ExternalTextResource;
 import org.gwtproject.resource.shared.ResourcePrototype;
+import org.gwtproject.resource.shared.Source;
 import org.gwtproject.resource.shared.TextResource;
 
 import com.google.gwt.core.client.GWT;

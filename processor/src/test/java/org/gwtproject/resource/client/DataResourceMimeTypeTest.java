@@ -16,6 +16,7 @@
 package org.gwtproject.resource.client;
 
 import org.gwtproject.resource.shared.DataResource;
+import org.gwtproject.resource.shared.Source;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;

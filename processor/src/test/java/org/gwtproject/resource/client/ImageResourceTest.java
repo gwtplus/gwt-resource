@@ -18,6 +18,7 @@ package org.gwtproject.resource.client;
 import org.gwtproject.resource.shared.ImageResource;
 import org.gwtproject.resource.shared.ImageResource.ImageOptions;
 import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
+import org.gwtproject.resource.shared.Source;
 import org.gwtproject.resource.client.impl.ImageResourcePrototype;
 
 import com.google.gwt.core.client.GWT;

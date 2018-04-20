@@ -19,6 +19,7 @@ import com.google.gwt.core.shared.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.resource.client.ClientBundle;
 import org.gwtproject.resource.shared.CssResource;
+import org.gwtproject.resource.shared.Source;
 
 /**
  * Test for GssResource in RTL mode.

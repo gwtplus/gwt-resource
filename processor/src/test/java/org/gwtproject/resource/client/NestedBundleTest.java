@@ -18,6 +18,7 @@ package org.gwtproject.resource.client;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.resource.client.GwtCreateResource.ClassType;
+import org.gwtproject.resource.shared.Source;
 import org.gwtproject.resource.shared.TextResource;
 
 /**

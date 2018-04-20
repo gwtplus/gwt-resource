@@ -15,7 +15,6 @@
  */
 package org.gwtproject.resource.rg;
 
-import org.gwtproject.resource.client.ClientBundle.Source;
 import org.gwtproject.resource.converter.Css2Gss;
 import org.gwtproject.resource.converter.Css2GssConversionException;
 import org.gwtproject.resource.ext.ClientBundleRequirements;
@@ -43,6 +42,7 @@ import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
 import org.gwtproject.resource.shared.CssResource.NotStrict;
 import org.gwtproject.resource.shared.CssResource.Shared;
 import org.gwtproject.resource.shared.ResourcePrototype;
+import org.gwtproject.resource.shared.Source;
 
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.ConfigurationProperty;
@@ -166,7 +166,8 @@ public class GssResourceGenerator extends AbstractCssResourceGenerator implement
     private final AutoConversionMode autoConversionMode;
     private final boolean gssDefaultInUiBinder;
 
-    public GssOptions(boolean enabled, AutoConversionMode autoConversionMode, boolean gssDefaultInUiBinder) {
+    public GssOptions(boolean enabled, AutoConversionMode autoConversionMode, 
+        boolean gssDefaultInUiBinder) {
       this.enabled = enabled;
       this.autoConversionMode = autoConversionMode;
       this.gssDefaultInUiBinder = gssDefaultInUiBinder;
@@ -221,7 +222,8 @@ public class GssResourceGenerator extends AbstractCssResourceGenerator implement
     }
   }
 
-  public static SourceCode readUrlContent(URL fileUrl, TreeLogger logger) throws UnableToCompleteException {
+  public static SourceCode readUrlContent(URL fileUrl, TreeLogger logger) 
+      throws UnableToCompleteException {
     TreeLogger branchLogger = logger.branch(TreeLogger.DEBUG,
             "Reading GSS stylesheet " + fileUrl.toExternalForm());
     try {
@@ -258,7 +260,8 @@ public class GssResourceGenerator extends AbstractCssResourceGenerator implement
     throw new UnableToCompleteException();
   }
 
-  public static GssOptions getGssOptions(PropertyOracle propertyOracle, TreeLogger logger) throws UnableToCompleteException {
+  public static GssOptions getGssOptions(PropertyOracle propertyOracle, TreeLogger logger) 
+      throws UnableToCompleteException {
     boolean gssEnabled;
     boolean gssDefaultInUiBinder;
     AutoConversionMode conversionMode;
@@ -608,8 +611,8 @@ public class GssResourceGenerator extends AbstractCssResourceGenerator implement
     sw.println("new " + method.getReturnType().getQualifiedSourceName() + "() {");
     sw.indent();
 
-    Map<JMethod, String> actualReplacements = writeMethods(logger, context, method, sw, constantDefinitions,
-        cssParsingResult.originalConstantNameMapping, renamingResult.mapping);
+    Map<JMethod, String> actualReplacements = writeMethods(logger, context, method, sw, 
+        constantDefinitions, cssParsingResult.originalConstantNameMapping, renamingResult.mapping);
 
     sw.outdent();
     sw.println("}");

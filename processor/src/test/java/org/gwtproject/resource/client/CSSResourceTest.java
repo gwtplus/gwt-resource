@@ -24,6 +24,7 @@ import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
 import org.gwtproject.resource.shared.CssResource.Shared;
 import org.gwtproject.resource.shared.DataResource;
 import org.gwtproject.resource.shared.ImageResource;
+import org.gwtproject.resource.shared.Source;
 
 /**
  * Contains various full-stack tests of the CssResource system.

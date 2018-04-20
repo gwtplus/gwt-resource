@@ -13,7 +13,6 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
 package org.gwtproject.resource.client.gss;
 
 import org.gwtproject.resource.client.ClientBundle;
@@ -22,6 +21,7 @@ import org.gwtproject.resource.shared.CssResource.Import;
 import org.gwtproject.resource.shared.CssResource.NotStrict;
 import org.gwtproject.resource.shared.DataResource;
 import org.gwtproject.resource.shared.ImageResource;
+import org.gwtproject.resource.shared.Source;
 import org.gwtproject.resource.client.gss.ScopeResource.SharedParent;
 
 /**

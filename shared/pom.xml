@@ -20,6 +20,12 @@
       <artifactId>safehtml</artifactId>
       <version>master-SNAPSHOT</version>
       <type>jar</type>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!-- Testing -->

@@ -1,5 +1,5 @@
 /*
- * Copyright 2009 Google Inc.
+ * Copyright 2008 Google Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -25,21 +25,24 @@ import java.lang.annotation.Target;
 /**
  * Specifies the class-path location of the resource or resources associated
  * with the {@link ResourcePrototype}.
+ * 
+ * You can either specify multiple locations in an array or add multiple
+ * instances of this annotation
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-@Repeatable(Path.List.class)
-public @interface Path {
-  String value();
+@Repeatable(Source.List.class)
+public @interface Source {
+  String[] value();
   
   /**
-   * List of {@link Path}s
+   * List of {@link Source}s
    */
   @Documented
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.METHOD)
-  @interface List {
-    Path[] value();
+  public @interface List {
+    Source[] value();
   }
 }

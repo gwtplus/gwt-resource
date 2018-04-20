@@ -15,6 +15,8 @@
  */
 package org.gwtproject.resource.client.impl;
 
+import static elemental2.core.Global.JSON;
+
 import org.gwtproject.callback.shared.AsyncCallback;
 import org.gwtproject.http.client.Request;
 import org.gwtproject.http.client.RequestBuilder;
@@ -29,7 +31,7 @@ import org.gwtproject.resource.shared.TextResource;
 import org.gwtproject.safehtml.shared.SafeUri;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck;
 
-import com.google.gwt.core.client.JavaScriptObject;
+import elemental2.core.JsArray;
 
 /**
  * Implements external resource fetching of TextResources.
@@ -39,7 +41,7 @@ public class ExternalTextResourcePrototype implements ExternalTextResource {
   /**
    * Maps the HTTP callback onto the ResourceCallback.
    */
-  private class ETRCallback implements RequestCallback, AsyncCallback<JavaScriptObject> {
+  private class ETRCallback implements RequestCallback, AsyncCallback<JsArray<String>> {
     final ResourceCallback<TextResource> callback;
 
     ETRCallback(ResourceCallback<TextResource> callback) {
@@ -60,21 +62,24 @@ public class ExternalTextResourcePrototype implements ExternalTextResource {
     // For RequestCallback
     public void onResponseReceived(Request request, final Response response) {
       String responseText = response.getText();
-      // Call eval() on the object.
-      JavaScriptObject jso = evalObject(responseText);
-      onSuccess(jso);
+
+      // Using JSON.parse instead of eval since it should be fast enough
+      // In case of bigger files both will be similarly slow
+      @SuppressWarnings("unchecked")
+      JsArray<String> jsArray = (JsArray<String>) JSON.parse(responseText);
+      onSuccess(jsArray);
      }
 
     // For AsyncCallback
-    public void onSuccess(JavaScriptObject jso) {
-      if (jso == null) {
+    public void onSuccess(JsArray<String> jsArray) {
+      if (jsArray == null) {
         callback.onError(new ResourceException(ExternalTextResourcePrototype.this, 
-            "eval() returned null"));
+            "JSON.parse returned null"));
         return;
       }
 
       // Populate the TextResponse cache array
-      final String resourceText = extractString(jso, index);
+      final String resourceText = jsArray.getAt(index);
       cache[index] = new TextResource() {
 
         public String getName() {
@@ -91,36 +96,6 @@ public class ExternalTextResourcePrototype implements ExternalTextResource {
       callback.onSuccess(cache[index]);
     }
   }
-
-  /**
-   * Evaluate the JSON payload. The regular expression to validate the safety of
-   * the payload is taken from RFC 4627 (D. Crockford).
-   * 
-   * @param data the raw JSON-encapsulated string bundle
-   * @return the evaluated JSON object, or <code>null</code> if there is an
-   *         error.
-   */
-  private static native JavaScriptObject evalObject(String data) /*-{
-    var safe = !(/[^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]/.test(
-      data.replace(/"(\\.|[^"\\])*"/g, '')));
-
-    if (!safe) {
-      return null;
-    }
-
-    return eval('(' + data + ')') || null;
-  }-*/;
-
-  /**
-   * Extract the specified String from a JavaScriptObject that is array-like.
-   * 
-   * @param jso the JavaScriptObject returned from {@link #evalObject(String)}
-   * @param index the index of the string to extract
-   * @return the requested string, or <code>null</code> if it does not exist.
-   */
-  private static native String extractString(JavaScriptObject jso, int index) /*-{
-    return (jso.length > index) && jso[index] || null;
-  }-*/;
 
   /**
    * This is a reference to an array nominally created in the IRB that contains

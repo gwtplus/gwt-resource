@@ -15,8 +15,8 @@
  */
 package org.gwtproject.resource.ext;
 
-import org.gwtproject.resource.client.ClientBundle.Source;
 import org.gwtproject.resource.shared.DefaultExtension;
+import org.gwtproject.resource.shared.Source;
 
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.GeneratorContext;
@@ -56,7 +56,7 @@ public final class ResourceGeneratorUtil {
     private final ResourceOracle resourceOracle;
     private final TreeLogger logger;
 
-    public GeneralLocator(TreeLogger logger, ResourceOracle resourceOracle) {
+    GeneralLocator(TreeLogger logger, ResourceOracle resourceOracle) {
       this.logger = logger;
       this.resourceOracle = resourceOracle;
     }

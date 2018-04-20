@@ -15,21 +15,14 @@
  */
 package org.gwtproject.resource.client;
 
-import org.gwtproject.resource.shared.Path;
 import org.gwtproject.resource.shared.ResourceBundle;
 import org.gwtproject.resource.shared.ResourceGeneratorType;
 import org.gwtproject.resource.shared.ResourcePrototype;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 /**
  * The use of this interface is similar to that of ImageBundle. Declare
  * no-argument functions that return subclasses of {@link ResourcePrototype},
- * which are annotated with {@link ClientBundle.Source} annotations specifying
+ * which are annotated with {@link Source} annotations specifying
  * the class-path location of the resource to include in the output. At runtime,
  * the functions will return an object that can be used to access the data in
  * the original resource.
@@ -38,18 +31,4 @@ import java.lang.annotation.Target;
  */
 @Deprecated // (since = "gwt-3.0.0", forRemoval = true)
 @ResourceGeneratorType(className = "org.gwtproject.resource.rg.BundleResourceGenerator")
-public interface ClientBundle {
-  /**
-   * Specifies the class-path location of the resource or resources associated
-   * with the {@link ResourcePrototype}.
-   * 
-   * @deprecated use {@link Path} instead
-   */
-  @Documented
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.METHOD)
-  @Deprecated
-  public @interface Source {
-    String[] value();
-  }
-}
+public interface ClientBundle { }
