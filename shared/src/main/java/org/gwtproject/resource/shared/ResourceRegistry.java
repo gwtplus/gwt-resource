@@ -15,8 +15,6 @@
  */
 package org.gwtproject.resource.shared;
 
-import java.util.List;
-
 /**
  * This is an extension of resource bundle that allows for name-based lookup of
  * resources. Note that the use of the methods defined within this interface
@@ -31,12 +29,12 @@ public interface ResourceRegistry {
    * @param name the name of the desired resource
    * @return the resource, or <code>null</code> if no such resource is defined.
    */
-  ResourcePrototype get(String name);
+  ResourcePrototype getResource(String name);
 
   /**
    * A convenience method to iterate over all ResourcePrototypes contained in
-   * the bundle.
+   * the resource bundle.
    */
-  List<ResourcePrototype> getAll();
+  ResourcePrototype[] getResources();
   
 }

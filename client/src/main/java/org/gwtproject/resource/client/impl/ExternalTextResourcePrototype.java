@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.gwtproject.resource.shared.impl;
+package org.gwtproject.resource.client.impl;
 
 import org.gwtproject.callback.shared.AsyncCallback;
 import org.gwtproject.http.client.Request;

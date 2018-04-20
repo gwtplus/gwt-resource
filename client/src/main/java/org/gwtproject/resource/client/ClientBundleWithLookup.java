@@ -13,9 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.gwtproject.resource.shared;
+package org.gwtproject.resource.client;
 
-import java.util.List;
+import org.gwtproject.resource.shared.ResourcePrototype;
+import org.gwtproject.resource.shared.ResourceRegistry;
 
 /**
  * This is an extension of ClientBundle that allows for name-based lookup of
@@ -33,23 +34,14 @@ public interface ClientBundleWithLookup extends ClientBundle, ResourceRegistry {
    * 
    * @param name the name of the desired resource
    * @return the resource, or <code>null</code> if no such resource is defined.
-   * 
-   * @deprecated use {@link #get(String)} instead
    */
-  @Deprecated
-  default ResourcePrototype getResource(String name) {
-    return get(name);
-  }
+  @Override
+  ResourcePrototype getResource(String name);
 
   /**
    * A convenience method to iterate over all ResourcePrototypes contained in
    * the ClientBundle.
-   * 
-   * @deprecated use {@link #getAll()} instead
    */
-  @Deprecated
-  default ResourcePrototype[] getResources() {
-    List<ResourcePrototype> all = getAll();
-    return all.toArray(new ResourcePrototype[all.size()]);
-  }
+  @Override
+  ResourcePrototype[] getResources();
 }

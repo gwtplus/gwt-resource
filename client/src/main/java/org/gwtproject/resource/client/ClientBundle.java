@@ -13,7 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.gwtproject.resource.shared;
+package org.gwtproject.resource.client;
+
+import org.gwtproject.resource.shared.Path;
+import org.gwtproject.resource.shared.ResourceBundle;
+import org.gwtproject.resource.shared.ResourcePrototype;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

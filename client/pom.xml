@@ -30,6 +30,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.gwtproject.resource</groupId>
+      <artifactId>gwt-resource-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.github.Vertispan.gwt-safehtml</groupId>
       <artifactId>safehtml</artifactId>
       <version>master-SNAPSHOT</version>
