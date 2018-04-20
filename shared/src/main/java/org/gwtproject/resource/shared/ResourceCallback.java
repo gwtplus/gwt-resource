@@ -15,35 +15,22 @@
  */
 package org.gwtproject.resource.shared;
 
-import org.gwtproject.callback.shared.Callback;
-
 /**
  * A callback interface for asynchronous operations on resources.
  * 
  * @param <R> the type of resource
  */
-public interface ResourceCallback<R extends ResourcePrototype> extends 
-    Callback<R, ResourceException> {
-  
+public interface ResourceCallback<R extends ResourcePrototype> {
+
   /**
    * Invoked if the asynchronous operation failed.
    * @param reason an exception describing the failure
    */
-  @Override
-  default void onFailure(ResourceException reason) {
-    onError(reason);
-  }
-
-  /**
-   * @deprecated implement {@link #onFailure(ResourceException)} instead
-   */
-  @Deprecated // (since="gwt-3.0.0", forRemoval=true)
-  default void onError(ResourceException e) { };
+  void onError(ResourceException reason);
 
   /**
    * Invoked if the asynchronous operation was successfully completed.
    * @param resource the resource on which the operation was performed
    */
-  @Override
   void onSuccess(R resource);
 }

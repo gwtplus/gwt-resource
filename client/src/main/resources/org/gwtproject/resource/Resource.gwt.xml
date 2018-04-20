@@ -14,13 +14,13 @@
 
 <!-- ClientBundle supports renaming files with strong names at compile time -->
 <module>
-  <inherits name="org.gwtproject.safehtml.SafeHtml" />
-  <inherits name="org.gwtproject.http.HTTP" /><!-- for ExternalTextResource -->
+  <inherits name="org.gwtproject.resource.ResourceAPI" />
+  <inherits name="org.gwtproject.http.HTTP" />  <!-- for ExternalTextResource -->
   <inherits name="org.gwtproject.jsonp.Jsonp" /><!-- for ExternalTextResource -->
   
-  <inherits name="com.google.gwt.resources.Resources"/><!-- config props def -->
+  <inherits name="com.google.gwt.resources.Resources"/><!-- config props def. -->
   
-  <source path="shared" />
+  <source path="client" />
 
   <!-- 
     Configuration properties for processor:

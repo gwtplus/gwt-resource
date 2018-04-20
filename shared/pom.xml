@@ -15,35 +15,11 @@
   <description>GWT Resources shared API</description>
 
   <dependencies>
-    <!-- GWT, should be removed before initial release -->
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>${gwt.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-dev</artifactId>
-      <version>${gwt.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
     <dependency>
       <groupId>com.github.Vertispan.gwt-safehtml</groupId>
       <artifactId>safehtml</artifactId>
       <version>master-SNAPSHOT</version>
       <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>com.github.gwtplus</groupId>
-      <artifactId>gwt-jsonp</artifactId>
-      <version>master-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.tbroyer</groupId>
-      <artifactId>gwt-http</artifactId>
-      <version>master-SNAPSHOT</version>
     </dependency>
 
     <!-- Testing -->
@@ -99,60 +75,10 @@
               <resources>
                 <resource>
                   <directory>${project.build.sourceDirectory}</directory>
-                  <include>org/gwtproject/jsonp/client/**/*.java</include>
+                  <include>org/gwtproject/resource/shared/**/*.java</include>
                   <filtering>false</filtering>
                 </resource>
               </resources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.21.0</version>
-        <configuration>
-          <!-- test-jvm -->
-          <includes>
-            <include>org/gwtproject/jsonp/client/JsonpRequestBuilderTest.java</include>
-          </includes>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.21.0</version>
-        <configuration>
-          <includes>
-            <include>org/gwtproject/jsonp/JsonpRequestSuite.java</include>
-          </includes>
-
-          <additionalClasspathElements>
-            <additionalClasspathElement>${project.build.testSourceDirectory}</additionalClasspathElement>
-          </additionalClasspathElements>
-
-          <useManifestOnlyJar>false</useManifestOnlyJar>
-
-          <forkCount>1C</forkCount>
-          <reuseForks>false</reuseForks>
-        </configuration>
-        <executions>
-          <execution>
-            <id>test-web</id>
-            <goals>
-              <goal>integration-test</goal>
-              <goal>verify</goal>
-            </goals>
-            <configuration>
-              <systemPropertyVariables>
-                <!-- Add -logLevel TRACE to get more debug output -->
-                <!-- Add -runStyle Manual:1 to run the tests in the real browser -->
-                <gwt.args>
-                  -prod -style PRETTY
-                  -gen target/generated-test-sources/test-web
-                  -war
-                  target/war/test-web
-                </gwt.args>
-              </systemPropertyVariables>
-              <reportsDirectory>${project.build.directory}/failsafe-reports/test-web</reportsDirectory>
             </configuration>
           </execution>
         </executions>
@@ -168,7 +94,7 @@
             </manifest>
             <manifestEntries>
               <!-- Java 9 compatibility -->
-              <Automatic-Module-Name>${project.groupId}</Automatic-Module-Name>
+              <Automatic-Module-Name>${project.groupId}.shared</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
@@ -185,18 +111,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.maven.doxia</groupId>
-            <artifactId>doxia-module-markdown</artifactId>
-            <version>1.8</version>
-          </dependency>
-        </dependencies>
-      </plugin>
     </plugins>
   </build>
-
 </project>

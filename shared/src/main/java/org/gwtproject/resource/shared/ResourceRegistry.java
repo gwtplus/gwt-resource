@@ -20,6 +20,9 @@ package org.gwtproject.resource.shared;
  * resources. Note that the use of the methods defined within this interface
  * will prevent the compiler from pruning any of the resources declared in the
  * bundle.
+ * 
+ * Resource bundle should extend this interface to let the processor know it 
+ * should generate additional methods
  */
 public interface ResourceRegistry {
 

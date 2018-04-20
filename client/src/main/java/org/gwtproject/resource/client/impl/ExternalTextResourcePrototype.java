@@ -54,7 +54,7 @@ public class ExternalTextResourcePrototype implements ExternalTextResource {
 
     // For AsyncCallback
     public void onFailure(Throwable exception) {
-      callback.onFailure(new ResourceException(ExternalTextResourcePrototype.this,
+      callback.onError(new ResourceException(ExternalTextResourcePrototype.this,
           "Unable to retrieve external resource", exception));
     }
 
@@ -69,7 +69,7 @@ public class ExternalTextResourcePrototype implements ExternalTextResource {
     // For AsyncCallback
     public void onSuccess(JavaScriptObject jso) {
       if (jso == null) {
-        callback.onFailure(new ResourceException(ExternalTextResourcePrototype.this, 
+        callback.onError(new ResourceException(ExternalTextResourcePrototype.this, 
             "eval() returned null"));
         return;
       }

@@ -21,5 +21,7 @@ package org.gwtproject.resource.shared;
  */
 @DefaultExtension(".txt")
 public interface TextResource extends ResourcePrototype {
+  
   String getText();
+  
 }
