@@ -17,6 +17,7 @@ package org.gwtproject.resource.client;
 
 import org.gwtproject.resource.shared.Path;
 import org.gwtproject.resource.shared.ResourceBundle;
+import org.gwtproject.resource.shared.ResourceGeneratorType;
 import org.gwtproject.resource.shared.ResourcePrototype;
 
 import java.lang.annotation.Documented;
@@ -36,6 +37,7 @@ import java.lang.annotation.Target;
  * @deprecated use {@link ResourceBundle} annotation instead
  */
 @Deprecated // (since = "gwt-3.0.0", forRemoval = true)
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.BundleResourceGenerator")
 public interface ClientBundle {
   /**
    * Specifies the class-path location of the resource or resources associated

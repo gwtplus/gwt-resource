@@ -991,26 +991,13 @@ public class CssResourceGenerator extends AbstractCssResourceGenerator
 
 
   /**
-   * Check for the presence of the NotStrict annotation on the method. This will
-   * also perform some limited sanity-checking for the now-deprecated Strict
-   * annotation.
+   * Check for the presence of the NotStrict annotation on the method.
    */
-  @SuppressWarnings("deprecation")
-  // keep references to deprecated Strict annotation local
   private boolean isStrict(TreeLogger logger, JMethod method) {
-    com.google.gwt.resources.client.CssResource.Strict strictAnnotation = method.getAnnotation(com.google.gwt.resources.client.CssResource.Strict.class);
     NotStrict nonStrictAnnotation = method.getAnnotation(NotStrict.class);
     boolean strict = true;
 
-    if (strictAnnotation != null && nonStrictAnnotation != null) {
-      // Both annotations
-      logger.log(TreeLogger.WARN, "Contradictory annotations "
-          + com.google.gwt.resources.client.CssResource.Strict.class.getName()
-          + " and " + NotStrict.class.getName()
-          + " applied to the CssResource accessor method; assuming strict");
-
-    } else if (nonStrictAnnotation != null) {
-      // Only the non-strict annotation
+    if (nonStrictAnnotation != null) {
       strict = false;
     }
 

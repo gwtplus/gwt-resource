@@ -48,5 +48,5 @@ public @interface ResourceGeneratorType {
   /**
    * @return fully qualified name of the generator class implementing {@link ResourceGenerator}
    */
-  String className();
+  String className() default "org.gwtproject.resource.shared.ResourceGeneratorType.Default";
 }
