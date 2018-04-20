@@ -21,6 +21,7 @@ package org.gwtproject.resource.shared;
  * not required as part of program initialization.
  */
 @DefaultExtension(".txt")
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.ExternalTextResourceGenerator")
 public interface ExternalTextResource extends ResourcePrototype {
 
   /**

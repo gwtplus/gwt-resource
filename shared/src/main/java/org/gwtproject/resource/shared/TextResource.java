@@ -20,6 +20,7 @@ package org.gwtproject.resource.shared;
  * output.
  */
 @DefaultExtension(".txt")
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.TextResourceGenerator")
 public interface TextResource extends ResourcePrototype {
   
   String getText();

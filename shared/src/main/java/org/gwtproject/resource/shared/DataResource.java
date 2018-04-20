@@ -28,6 +28,7 @@ import java.lang.annotation.Target;
  * resources which may not be determined automatically at compile time. Use
  * {@link DoNotEmbed} to prevent a resource from being embedded.
  */
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.DataResourceGenerator")
 public interface DataResource extends ResourcePrototype {
   /**
    * Specifies that the resource or resources associated with the

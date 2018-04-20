@@ -144,6 +144,7 @@ import java.lang.annotation.Target;
  */
 @DefaultExtension(".css")
 @DefaultExtension(".gss")
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.CssResourceGenerator")
 public interface CssResource extends ResourcePrototype, CssResourceBase {
   /**
    * The original CSS class name specified in the resource. This allows CSS

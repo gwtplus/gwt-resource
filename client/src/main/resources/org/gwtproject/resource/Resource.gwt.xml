@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "GWT 2.8.2" "http://www.gwtproject.org/doctype/2.8.2/gwt-module.dtd">
+
 <!--                                                                        -->
 <!-- Copyright 2008 Google Inc.                                             -->
 <!-- Licensed under the Apache License, Version 2.0 (the "License"); you    -->
@@ -12,40 +15,10 @@
 <!-- implied. License for the specific language governing permissions and   -->
 <!-- limitations under the License.                                         -->
 
-<!-- ClientBundle supports renaming files with strong names at compile time -->
 <module>
   <inherits name="org.gwtproject.resource.ResourceAPI" />
   <inherits name="org.gwtproject.http.HTTP" />  <!-- for ExternalTextResource -->
   <inherits name="org.gwtproject.jsonp.Jsonp" /><!-- for ExternalTextResource -->
   
-  <inherits name="com.google.gwt.resources.Resources"/><!-- config props def. -->
-  
   <source path="client" />
-
-  <!-- 
-    Configuration properties for processor:
-     - ClientBundle.enableInlining
-     - ClientBundle.enableRenaming
-     - CssResource.mergeEnabled
-     - CssResource.obfuscationPrefix
-     - CssResource.reservedClassPrefixes
-     - CssResource.style
-     - CssResource.enableGss
-     - CssResource.allowedAtRules
-     - CssResource.allowedFunctions
-     - CssResource.conversionMode
-     - CssResource.gssDefaultInUiBinder
-     - ExternalTextResource.useJsonp
-  -->
-
-  <!-- Default -->
-  <generate-with class="org.gwtproject.resource.rebind.context.StaticClientBundleGenerator">
-    <when-type-assignable class="org.gwtproject.resource.shared.ClientBundle" />
-  </generate-with>
-
-  <!-- Override -->
-  <generate-with class="org.gwtproject.resource.rebind.context.InlineClientBundleGenerator">
-    <when-property-is name="ClientBundle.enableInlining" value="true" />
-    <when-type-assignable class="org.gwtproject.resource.shared.ClientBundle" />
-  </generate-with>
 </module>

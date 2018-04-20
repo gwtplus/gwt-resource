@@ -25,8 +25,8 @@ import java.lang.annotation.Target;
 /**
  * Specifies the default extensions for a resource type. This annotation is
  * intended to allow external tooling to know which filename extensions the
- * ClientBundle system will search for if no {@link ClientBundle.Source} 
- * annotation is present on getter method.
+ * resource bundle system will search for if no {@link Path} annotation is 
+ * present on getter method.
  */
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)

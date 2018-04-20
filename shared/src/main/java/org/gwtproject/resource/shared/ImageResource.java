@@ -30,6 +30,7 @@ import java.lang.annotation.Target;
 @DefaultExtension(".jpg")
 @DefaultExtension(".gif")
 @DefaultExtension(".bmp")
+@ResourceGeneratorType(className = "org.gwtproject.resource.rg.ImageResourceGenerator")
 public interface ImageResource extends ResourcePrototype {
 
   /**
