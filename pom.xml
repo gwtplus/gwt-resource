@@ -33,6 +33,7 @@
 
   <modules>
     <module>shared</module>
+    <module>client</module>
     <module>processor</module>
   </modules>
 

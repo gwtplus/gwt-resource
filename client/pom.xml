@@ -9,10 +9,10 @@
     <version>HEAD-SNAPSHOT</version>
   </parent>
 
-  <artifactId>gwt-resource-api</artifactId>
+  <artifactId>gwt-resource</artifactId>
 
-  <name>GWT Resources :: API</name>
-  <description>GWT Resources shared API</description>
+  <name>GWT Resources</name>
+  <description>GWT Resources client side API</description>
 
   <dependencies>
     <!-- GWT, should be removed before initial release -->
