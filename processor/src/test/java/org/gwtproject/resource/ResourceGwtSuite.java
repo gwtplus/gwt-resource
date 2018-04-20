@@ -46,7 +46,7 @@ public class ResourceGwtSuite {
     suite.addTestSuite(DataResourceDoNotEmbedTest.class);
     suite.addTestSuite(DataResourceMimeTypeTest.class);
     suite.addTestSuite(ExternalTextResourceJsonpTest.class);
-    /* TODO: check xhr! suite.addTestSuite(ExternalTextResourceTest.class);*/
+    suite.addTestSuite(ExternalTextResourceTest.class);
     suite.addTestSuite(ImageResourceNoInliningTest.class);
     suite.addTestSuite(ImageResourceTest.class);
     suite.addTestSuite(NestedBundleTest.class);

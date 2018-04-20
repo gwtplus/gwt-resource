@@ -34,7 +34,6 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * Implements external resource fetching of TextResources.
  */
-//TODO: extract client side specific logic somewhere else (client module?)
 public class ExternalTextResourcePrototype implements ExternalTextResource {
 
   /**
