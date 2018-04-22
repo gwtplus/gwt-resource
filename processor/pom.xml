@@ -15,38 +15,10 @@
   <description>GWT Resources annotation processor</description>
 
   <dependencies>
-    <!-- GWT, should be removed before initial release -->
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>${gwt.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-dev</artifactId>
-      <version>${gwt.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
     <dependency>
       <groupId>org.gwtproject.resource</groupId>
       <artifactId>gwt-resource</artifactId>
       <version>${project.version}</version>
-    </dependency>
-
-    <!-- Testing -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <version>1.9.5</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 
@@ -78,55 +50,6 @@
             <version>8.8</version>
           </dependency>
         </dependencies>
-      </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.21.0</version>
-        <configuration>
-          <!-- test-jvm -->
-          <includes>
-            <include>org/gwtproject/resource/ResourceJreSuite.java</include>
-          </includes>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.21.0</version>
-        <configuration>
-          <includes>
-            <include>org.gwtproject.resource.ResourceGwtSuite.java</include>
-          </includes>
-
-          <additionalClasspathElements>
-            <additionalClasspathElement>${project.build.testSourceDirectory}</additionalClasspathElement>
-          </additionalClasspathElements>
-
-          <useManifestOnlyJar>false</useManifestOnlyJar>
-
-          <forkCount>1C</forkCount>
-          <reuseForks>false</reuseForks>
-        </configuration>
-        <executions>
-          <execution>
-            <id>test-web</id>
-            <goals>
-              <goal>integration-test</goal>
-              <goal>verify</goal>
-            </goals>
-            <configuration>
-              <systemPropertyVariables>
-                <!-- Add -logLevel TRACE to get more debug output -->
-                <!-- Add -runStyle Manual:1 to run the tests in the real browser -->
-                <gwt.args>
-                  -prod -style PRETTY
-                  -gen target/generated-test-sources/test-web
-                  -war target/war/test-web
-                </gwt.args>
-              </systemPropertyVariables>
-              <reportsDirectory>${project.build.directory}/failsafe-reports/test-web</reportsDirectory>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>

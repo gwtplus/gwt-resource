@@ -35,6 +35,7 @@
     <module>shared</module>
     <module>client</module>
     <module>processor</module>
+    <module>generator</module>
   </modules>
 
   <ciManagement>
