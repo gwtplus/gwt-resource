@@ -21,9 +21,9 @@ import static org.mockito.Mockito.when;
 
 import com.google.gwt.core.ext.typeinfo.JClassType;
 import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssClassSelectorNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssTree;
-import com.google.gwt.thirdparty.common.css.compiler.ast.VisitController;
+import com.google.common.css.compiler.ast.CssClassSelectorNode;
+import com.google.common.css.compiler.ast.CssTree;
+import com.google.common.css.compiler.ast.VisitController;
 
 import junit.framework.TestCase;
 

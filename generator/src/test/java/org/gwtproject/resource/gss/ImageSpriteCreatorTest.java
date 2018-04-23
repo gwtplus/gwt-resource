@@ -33,9 +33,9 @@ import org.gwtproject.resource.shared.ImageResource.ImageOptions;
 import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.gss.ImageSpriteCreator.MethodByPathHelper;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssTree;
-import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
+import com.google.common.css.compiler.ast.CssTree;
+import com.google.common.css.compiler.ast.ErrorManager;
+import com.google.common.css.compiler.ast.GssError;
 
 /**
  * Test class for {@link ImageSpriteCreator}.

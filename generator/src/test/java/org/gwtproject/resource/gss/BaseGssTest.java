@@ -20,12 +20,12 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
-import com.google.gwt.thirdparty.common.css.SourceCode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssTree;
-import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssParser;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssParserException;
+import com.google.common.css.SourceCode;
+import com.google.common.css.compiler.ast.CssTree;
+import com.google.common.css.compiler.ast.ErrorManager;
+import com.google.common.css.compiler.ast.GssError;
+import com.google.common.css.compiler.ast.GssParser;
+import com.google.common.css.compiler.ast.GssParserException;
 import com.google.common.base.Joiner;
 
 import junit.framework.TestCase;

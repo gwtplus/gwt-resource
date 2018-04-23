@@ -19,14 +19,14 @@ import org.gwtproject.resource.gss.ast.CssJavaExpressionNode;
 import org.gwtproject.resource.gss.ast.CssRuntimeConditionalRuleNode;
 
 import com.google.common.collect.Lists;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssAtRuleNode.Type;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssBooleanExpressionNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompilerPass;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssConditionalBlockNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssConditionalRuleNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssValueNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.DefaultTreeVisitor;
-import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
+import com.google.common.css.compiler.ast.CssAtRuleNode.Type;
+import com.google.common.css.compiler.ast.CssBooleanExpressionNode;
+import com.google.common.css.compiler.ast.CssCompilerPass;
+import com.google.common.css.compiler.ast.CssConditionalBlockNode;
+import com.google.common.css.compiler.ast.CssConditionalRuleNode;
+import com.google.common.css.compiler.ast.CssValueNode;
+import com.google.common.css.compiler.ast.DefaultTreeVisitor;
+import com.google.common.css.compiler.ast.MutatingVisitController;
 
 import java.util.List;
 import java.util.regex.Matcher;

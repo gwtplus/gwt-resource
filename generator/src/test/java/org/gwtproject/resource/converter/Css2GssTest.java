@@ -19,9 +19,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.gwt.core.ext.UnableToCompleteException;
-import com.google.gwt.thirdparty.common.css.SourceCode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssParser;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssParserException;
+import com.google.common.css.SourceCode;
+import com.google.common.css.compiler.ast.GssParser;
+import com.google.common.css.compiler.ast.GssParserException;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 

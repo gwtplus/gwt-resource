@@ -18,11 +18,11 @@ package org.gwtproject.resource.gss;
 import org.gwtproject.resource.gss.ast.CssJavaExpressionNode;
 
 import com.google.common.collect.ImmutableList;
-import com.google.gwt.thirdparty.common.css.SourceCodeLocation;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssValueNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunction;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunctionException;
+import com.google.common.css.SourceCodeLocation;
+import com.google.common.css.compiler.ast.CssValueNode;
+import com.google.common.css.compiler.ast.ErrorManager;
+import com.google.common.css.compiler.ast.GssFunction;
+import com.google.common.css.compiler.ast.GssFunctionException;
 
 import java.util.List;
 

@@ -15,7 +15,6 @@
  */
 package org.gwtproject.resource.css;
 
-
 import org.gwtproject.resource.css.ast.Context;
 import org.gwtproject.resource.css.ast.CssCompilerException;
 import org.gwtproject.resource.css.ast.CssDef;

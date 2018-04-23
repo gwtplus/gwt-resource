@@ -15,11 +15,11 @@
  */
 package org.gwtproject.resource.gss;
 
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompilerPass;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssDefinitionNode;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssTree;
-import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
-import com.google.gwt.thirdparty.common.css.compiler.passes.CollectConstantDefinitions;
+import com.google.common.css.compiler.ast.CssCompilerPass;
+import com.google.common.css.compiler.ast.CssDefinitionNode;
+import com.google.common.css.compiler.ast.CssTree;
+import com.google.common.css.compiler.ast.MutatingVisitController;
+import com.google.common.css.compiler.passes.CollectConstantDefinitions;
 
 /**
  * A pass that collects the constant definitions inside the tree. This pass removes the constant

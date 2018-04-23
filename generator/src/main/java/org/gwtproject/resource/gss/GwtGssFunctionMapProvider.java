@@ -18,8 +18,8 @@ package org.gwtproject.resource.gss;
 import org.gwtproject.resource.ext.ResourceContext;
 
 import com.google.common.collect.ImmutableMap;
-import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunction;
-import com.google.gwt.thirdparty.common.css.compiler.gssfunctions.DefaultGssFunctionMapProvider;
+import com.google.common.css.compiler.ast.GssFunction;
+import com.google.common.css.compiler.gssfunctions.DefaultGssFunctionMapProvider;
 
 import java.util.Map;
 

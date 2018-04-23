@@ -16,9 +16,9 @@
 package org.gwtproject.resource.gss.ast;
 
 import com.google.common.base.Strings;
+import com.google.common.css.SourceCodeLocation;
+import com.google.common.css.compiler.ast.CssValueNode;
 import com.google.gwt.core.ext.Generator;
-import com.google.gwt.thirdparty.common.css.SourceCodeLocation;
-import com.google.gwt.thirdparty.common.css.compiler.ast.CssValueNode;
 
 import java.util.Arrays;
 import java.util.List;
