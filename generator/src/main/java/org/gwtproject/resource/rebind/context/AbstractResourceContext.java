@@ -20,12 +20,12 @@ import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGenerator;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 
+import com.google.common.io.BaseEncoding;
 import com.google.gwt.core.ext.GeneratorContext;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.UnableToCompleteException;
 import com.google.gwt.core.ext.typeinfo.JClassType;
 import com.google.gwt.dev.util.Util;
-import com.google.gwt.thirdparty.guava.common.io.BaseEncoding;
 
 import java.io.IOException;
 import java.net.URL;

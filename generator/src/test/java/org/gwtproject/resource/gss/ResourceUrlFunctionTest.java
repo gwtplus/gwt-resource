@@ -38,7 +38,7 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.CssValueNode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunctionException;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList;
 
 import junit.framework.TestCase;
 

@@ -26,7 +26,7 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssParser;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssParserException;
-import com.google.gwt.thirdparty.guava.common.base.Joiner;
+import com.google.common.base.Joiner;
 
 import junit.framework.TestCase;
 

@@ -20,7 +20,7 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.CssConditionalBlockNode
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssTree;
 import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
 import com.google.gwt.thirdparty.common.css.compiler.passes.CreateConditionalNodes;
-import com.google.gwt.thirdparty.guava.common.collect.Sets;
+import com.google.common.collect.Sets;
 
 import java.util.Set;
 

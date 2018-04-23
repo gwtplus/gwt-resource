@@ -24,10 +24,10 @@ import org.gwtproject.resource.css.ast.CssProperty.Value;
 import org.gwtproject.resource.css.ast.CssRule;
 import org.gwtproject.resource.css.ast.CssVisitor;
 
+import com.google.common.base.Preconditions;
+import com.google.common.collect.Sets;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.TreeLogger.Type;
-import com.google.gwt.thirdparty.guava.common.base.Preconditions;
-import com.google.gwt.thirdparty.guava.common.collect.Sets;
 
 import java.util.ArrayList;
 import java.util.List;

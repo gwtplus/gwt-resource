@@ -15,11 +15,11 @@
  */
 package org.gwtproject.resource.gss;
 
+import com.google.common.collect.ImmutableList;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssBooleanExpressionNode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssBooleanExpressionNode.Type;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompilerPass;
 import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableList;
 
 import java.util.HashSet;
 import java.util.List;

@@ -15,6 +15,7 @@
  */
 package org.gwtproject.resource.gss;
 
+import com.google.common.base.Objects;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompilerPass;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompositeValueNode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssDeclarationNode;
@@ -28,7 +29,6 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.CssValueNode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.DefaultTreeVisitor;
 import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
 import com.google.gwt.thirdparty.common.css.compiler.passes.BiDiFlipper;
-import com.google.gwt.thirdparty.guava.common.base.Objects;
 
 import java.util.List;
 

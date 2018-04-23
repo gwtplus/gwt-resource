@@ -24,6 +24,10 @@ import org.gwtproject.resource.shared.ImageResource;
 import org.gwtproject.resource.shared.ImageResource.ImageOptions;
 import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
 
+import com.google.common.annotations.VisibleForTesting;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList.Builder;
+import com.google.common.collect.Lists;
 import com.google.gwt.core.ext.typeinfo.JClassType;
 import com.google.gwt.core.ext.typeinfo.JMethod;
 import com.google.gwt.core.ext.typeinfo.JType;
@@ -43,10 +47,6 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.DefaultTreeVisitor;
 import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
-import com.google.gwt.thirdparty.guava.common.annotations.VisibleForTesting;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableList;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableList.Builder;
-import com.google.gwt.thirdparty.guava.common.collect.Lists;
 
 import java.util.List;
 

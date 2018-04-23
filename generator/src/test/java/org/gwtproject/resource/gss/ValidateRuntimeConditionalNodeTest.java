@@ -28,7 +28,7 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
 import com.google.gwt.thirdparty.common.css.compiler.passes.CreateConditionalNodes;
 import com.google.gwt.thirdparty.common.css.compiler.passes.CreateDefinitionNodes;
-import com.google.gwt.thirdparty.guava.common.collect.Sets;
+import com.google.common.collect.Sets;
 
 import org.mockito.verification.VerificationMode;
 

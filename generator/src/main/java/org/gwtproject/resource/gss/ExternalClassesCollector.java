@@ -15,6 +15,8 @@
  */
 package org.gwtproject.resource.gss;
 
+import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableSet.Builder;
 import com.google.gwt.thirdparty.common.css.SourceCodeLocation;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssClassSelectorNode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.CssCompilerPass;
@@ -27,8 +29,6 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.DefaultTreeVisitor;
 import com.google.gwt.thirdparty.common.css.compiler.ast.ErrorManager;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.MutatingVisitController;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableSet;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableSet.Builder;
 
 import java.util.ArrayList;
 import java.util.HashSet;

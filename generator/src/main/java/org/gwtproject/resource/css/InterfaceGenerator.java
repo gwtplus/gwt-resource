@@ -21,6 +21,10 @@ import org.gwtproject.resource.rg.GssResourceGenerator.LoggerErrorManager;
 import org.gwtproject.resource.shared.CssResource;
 import org.gwtproject.resource.shared.CssResource.ClassName;
 
+import com.google.common.base.CaseFormat;
+import com.google.common.base.Function;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
 import com.google.gwt.core.ext.Generator;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.UnableToCompleteException;
@@ -32,10 +36,6 @@ import com.google.gwt.thirdparty.common.css.compiler.passes.CollectConstantDefin
 import com.google.gwt.thirdparty.common.css.compiler.passes.CreateDefinitionNodes;
 import com.google.gwt.thirdparty.common.css.compiler.passes.CreateForLoopNodes;
 import com.google.gwt.thirdparty.common.css.compiler.passes.UnrollLoops;
-import com.google.gwt.thirdparty.guava.common.base.CaseFormat;
-import com.google.gwt.thirdparty.guava.common.base.Function;
-import com.google.gwt.thirdparty.guava.common.collect.Iterables;
-import com.google.gwt.thirdparty.guava.common.collect.Lists;
 import com.google.gwt.user.rebind.SourceWriter;
 import com.google.gwt.user.rebind.StringSourceWriter;
 import com.google.gwt.util.tools.ArgHandlerFile;

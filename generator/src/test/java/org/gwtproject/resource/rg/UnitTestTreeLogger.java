@@ -17,8 +17,8 @@ package org.gwtproject.resource.rg;
 
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.dev.util.log.AbstractTreeLogger;
-import com.google.gwt.thirdparty.guava.common.collect.ComparisonChain;
-import com.google.gwt.thirdparty.guava.common.collect.Lists;
+import com.google.common.collect.ComparisonChain;
+import com.google.common.collect.Lists;
 
 import junit.framework.Assert;
 

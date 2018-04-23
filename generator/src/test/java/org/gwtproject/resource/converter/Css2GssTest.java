@@ -22,8 +22,8 @@ import com.google.gwt.core.ext.UnableToCompleteException;
 import com.google.gwt.thirdparty.common.css.SourceCode;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssParser;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssParserException;
-import com.google.gwt.thirdparty.guava.common.base.Predicate;
-import com.google.gwt.thirdparty.guava.common.base.Predicates;
+import com.google.common.base.Predicate;
+import com.google.common.base.Predicates;
 
 import junit.framework.TestCase;
 

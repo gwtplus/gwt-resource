@@ -56,6 +56,7 @@ import org.gwtproject.resource.shared.CssResource.NotStrict;
 import org.gwtproject.resource.shared.CssResource.Shared;
 import org.gwtproject.resource.shared.CssResourceBase;
 
+import com.google.common.base.Joiner;
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.ConfigurationProperty;
 import com.google.gwt.core.ext.Generator;
@@ -72,7 +73,6 @@ import com.google.gwt.core.ext.typeinfo.TypeOracle;
 import com.google.gwt.dev.util.DefaultTextOutput;
 import com.google.gwt.dev.util.Util;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.thirdparty.guava.common.base.Joiner;
 import com.google.gwt.user.rebind.SourceWriter;
 import com.google.gwt.user.rebind.StringSourceWriter;
 

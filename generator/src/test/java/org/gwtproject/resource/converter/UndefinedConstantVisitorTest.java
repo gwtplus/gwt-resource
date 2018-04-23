@@ -28,8 +28,8 @@ import org.gwtproject.resource.css.ast.CssProperty.IdentValue;
 import org.gwtproject.resource.css.ast.CssProperty.ListValue;
 import org.gwtproject.resource.css.ast.CssProperty.Value;
 import org.gwtproject.resource.css.ast.CssRule;
-import com.google.gwt.thirdparty.guava.common.collect.Lists;
-import com.google.gwt.thirdparty.guava.common.collect.Sets;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 
 import junit.framework.TestCase;
 

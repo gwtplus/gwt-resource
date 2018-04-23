@@ -22,6 +22,8 @@ import org.gwtproject.resource.gss.ast.CssJavaExpressionNode;
 import org.gwtproject.resource.shared.DataResource;
 import org.gwtproject.resource.shared.ImageResource;
 
+import com.google.common.annotations.VisibleForTesting;
+import com.google.common.collect.ImmutableList;
 import com.google.gwt.core.ext.typeinfo.JClassType;
 import com.google.gwt.core.ext.typeinfo.JType;
 import com.google.gwt.core.ext.typeinfo.NotFoundException;
@@ -34,8 +36,6 @@ import com.google.gwt.thirdparty.common.css.compiler.ast.GssError;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunction;
 import com.google.gwt.thirdparty.common.css.compiler.ast.GssFunctionException;
 import com.google.gwt.thirdparty.common.css.compiler.gssfunctions.GssFunctions;
-import com.google.gwt.thirdparty.guava.common.annotations.VisibleForTesting;
-import com.google.gwt.thirdparty.guava.common.collect.ImmutableList;
 
 import java.util.List;
 

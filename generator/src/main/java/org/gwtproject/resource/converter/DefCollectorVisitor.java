@@ -21,11 +21,11 @@ import org.gwtproject.resource.css.ast.CssEval;
 import org.gwtproject.resource.css.ast.CssUrl;
 import org.gwtproject.resource.css.ast.CssVisitor;
 
+import com.google.common.base.Strings;
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.TreeLogger.Type;
-import com.google.gwt.thirdparty.guava.common.base.Strings;
-import com.google.gwt.thirdparty.guava.common.collect.BiMap;
-import com.google.gwt.thirdparty.guava.common.collect.HashBiMap;
 
 import java.util.LinkedList;
 import java.util.List;
