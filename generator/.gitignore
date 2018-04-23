@@ -6,3 +6,4 @@
 /war/
 /out/
 /.checkstyle
+/dependency-reduced-pom.xml
