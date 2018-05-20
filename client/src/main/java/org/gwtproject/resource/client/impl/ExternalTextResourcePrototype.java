@@ -17,7 +17,6 @@ package org.gwtproject.resource.client.impl;
 
 import static elemental2.core.Global.JSON;
 
-import org.gwtproject.callback.shared.AsyncCallback;
 import org.gwtproject.http.client.Request;
 import org.gwtproject.http.client.RequestBuilder;
 import org.gwtproject.http.client.RequestCallback;
@@ -30,6 +29,7 @@ import org.gwtproject.resource.shared.ResourceException;
 import org.gwtproject.resource.shared.TextResource;
 import org.gwtproject.safehtml.shared.SafeUri;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck;
+import org.gwtproject.user.client.rpc.AsyncCallback;
 
 import elemental2.core.JsArray;
 

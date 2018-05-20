@@ -15,7 +15,7 @@
  */
 package org.gwtproject.resource.rg;
 
-import org.gwtproject.injector.client.StyleInjector;
+import org.gwtproject.dom.client.StyleInjector;
 import org.gwtproject.resource.ext.AbstractResourceGenerator;
 import org.gwtproject.resource.ext.ResourceContext;
 

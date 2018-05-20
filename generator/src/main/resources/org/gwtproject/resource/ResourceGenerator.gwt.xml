@@ -17,7 +17,7 @@
 
 <module>
   <inherits name="org.gwtproject.resource.Resource" />
-  <inherits name="org.gwtproject.injector.Injector" />
+  <inherits name="org.gwtproject.dom.DOM" />
   
   <inherits name="com.google.gwt.resources.Resources"/><!-- config props def. -->
 

@@ -16,16 +16,10 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.github.Vertispan.gwt-safehtml</groupId>
-      <artifactId>safehtml</artifactId>
-      <version>master-SNAPSHOT</version>
-      <type>jar</type>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
+        <groupId>org.gwtproject.safehtml</groupId>
+        <artifactId>gwt-safehtml</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <type>jar</type>
     </dependency>
 
     <!-- Testing -->

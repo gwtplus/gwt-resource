@@ -21,14 +21,14 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.github.gwtplus</groupId>
+      <groupId>org.gwtproject.jsonp</groupId>
       <artifactId>gwt-jsonp</artifactId>
-      <version>master-SNAPSHOT</version>
+      <version>HEAD-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>com.github.tbroyer</groupId>
+      <groupId>org.gwtproject.http</groupId>
       <artifactId>gwt-http</artifactId>
-      <version>master-SNAPSHOT</version>
+      <version>HEAD-SNAPSHOT</version>
     </dependency>
 
     <!-- Testing -->
