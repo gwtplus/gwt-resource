@@ -15,13 +15,13 @@
  */
 package org.gwtproject.resource.rg;
 
-import org.gwtproject.resource.client.impl.DataResourcePrototype;
 import org.gwtproject.resource.ext.AbstractResourceGenerator;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.ext.SupportsGeneratorResultCaching;
-import org.gwtproject.resource.shared.DataResource.DoNotEmbed;
-import org.gwtproject.resource.shared.DataResource.MimeType;
+import org.gwtproject.resources.client.DataResource.DoNotEmbed;
+import org.gwtproject.resources.client.DataResource.MimeType;
+import org.gwtproject.resources.client.impl.DataResourcePrototype;
 import org.gwtproject.safehtml.shared.UriUtils;
 
 import com.google.gwt.core.ext.TreeLogger;

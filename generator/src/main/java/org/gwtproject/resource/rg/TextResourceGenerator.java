@@ -19,7 +19,7 @@ import org.gwtproject.resource.ext.AbstractResourceGenerator;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.ext.SupportsGeneratorResultCaching;
-import org.gwtproject.resource.shared.TextResource;
+import org.gwtproject.resources.client.TextResource;
 
 import com.google.gwt.core.ext.Generator;
 import com.google.gwt.core.ext.TreeLogger;

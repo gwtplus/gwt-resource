@@ -15,8 +15,6 @@
  */
 package org.gwtproject.resource.rebind.context;
 
-import org.gwtproject.resource.client.ClientBundle;
-import org.gwtproject.resource.client.ClientBundleWithLookup;
 import org.gwtproject.resource.ext.ClientBundleFields;
 import org.gwtproject.resource.ext.ClientBundleRequirements;
 import org.gwtproject.resource.ext.ResourceContext;
@@ -24,8 +22,10 @@ import org.gwtproject.resource.ext.ResourceGenerator;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.ext.SupportsGeneratorResultCaching;
 import org.gwtproject.resource.rg.BundleResourceGenerator;
-import org.gwtproject.resource.shared.ResourceGeneratorType;
-import org.gwtproject.resource.shared.ResourcePrototype;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.ClientBundleWithLookup;
+import org.gwtproject.resources.client.ResourceGeneratorType;
+import org.gwtproject.resources.client.ResourcePrototype;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.ext.BadPropertyValueException;

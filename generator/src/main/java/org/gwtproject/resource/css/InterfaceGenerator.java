@@ -18,8 +18,8 @@ package org.gwtproject.resource.css;
 import org.gwtproject.resource.gss.ClassNamesCollector;
 import org.gwtproject.resource.rg.GssResourceGenerator;
 import org.gwtproject.resource.rg.GssResourceGenerator.LoggerErrorManager;
-import org.gwtproject.resource.shared.CssResource;
-import org.gwtproject.resource.shared.CssResource.ClassName;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.ClassName;
 
 import com.google.common.base.CaseFormat;
 import com.google.common.base.Function;

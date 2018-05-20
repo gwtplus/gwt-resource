@@ -15,8 +15,8 @@
  */
 package org.gwtproject.resource.client.gss;
 
-import org.gwtproject.resource.client.ClientBundle;
-import org.gwtproject.resource.shared.CssResource;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CssResource;
 
 /**
  * ClientBundle containing defining several CssResource in order to be able to test the

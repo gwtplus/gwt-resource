@@ -15,8 +15,8 @@
  */
 package org.gwtproject.resource.ext;
 
-import org.gwtproject.resource.shared.DefaultExtension;
-import org.gwtproject.resource.shared.Source;
+import org.gwtproject.resources.client.ClientBundle.Source;
+import org.gwtproject.resources.client.DefaultExtension;
 
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.GeneratorContext;

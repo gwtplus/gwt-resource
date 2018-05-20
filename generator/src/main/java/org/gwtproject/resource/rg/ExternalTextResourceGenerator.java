@@ -15,14 +15,14 @@
  */
 package org.gwtproject.resource.rg;
 
-import org.gwtproject.resource.client.impl.ExternalTextResourcePrototype;
 import org.gwtproject.resource.ext.AbstractResourceGenerator;
 import org.gwtproject.resource.ext.ClientBundleFields;
 import org.gwtproject.resource.ext.ClientBundleRequirements;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.ext.SupportsGeneratorResultCaching;
-import org.gwtproject.resource.shared.TextResource;
+import org.gwtproject.resources.client.TextResource;
+import org.gwtproject.resources.client.impl.ExternalTextResourcePrototype;
 import org.gwtproject.safehtml.shared.UriUtils;
 
 import com.google.gwt.core.ext.BadPropertyValueException;

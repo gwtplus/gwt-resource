@@ -13,12 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
 package org.gwtproject.resource.client.gss;
 
-import org.gwtproject.resource.client.ClientBundle;
-import org.gwtproject.resource.shared.CssResource;
-import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 
 /**
  * ClientBundle used in order to test the {@code @import}

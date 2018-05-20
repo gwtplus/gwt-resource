@@ -16,7 +16,7 @@
 <!-- limitations under the License.                                         -->
 
 <module>
-  <inherits name="org.gwtproject.resource.Resource" />
+  <inherits name="org.gwtproject.resources.Resource" />
   <inherits name="org.gwtproject.dom.DOM" />
   
   <inherits name="com.google.gwt.resources.Resources"/><!-- config props def. -->
@@ -39,12 +39,12 @@
 
   <!-- Default -->
   <generate-with class="org.gwtproject.resource.rebind.context.StaticClientBundleGenerator">
-    <when-type-assignable class="org.gwtproject.resource.client.ClientBundle" />
+    <when-type-assignable class="org.gwtproject.resources.client.ClientBundle" />
   </generate-with>
 
   <!-- Override -->
   <generate-with class="org.gwtproject.resource.rebind.context.InlineClientBundleGenerator">
     <when-property-is name="ClientBundle.enableInlining" value="true" />
-    <when-type-assignable class="org.gwtproject.resource.client.ClientBundle" />
+    <when-type-assignable class="org.gwtproject.resources.client.ClientBundle" />
   </generate-with>
 </module>

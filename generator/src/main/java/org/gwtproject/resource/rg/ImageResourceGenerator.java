@@ -15,7 +15,6 @@
  */
 package org.gwtproject.resource.rg;
 
-import org.gwtproject.resource.client.impl.ImageResourcePrototype;
 import org.gwtproject.resource.ext.AbstractResourceGenerator;
 import org.gwtproject.resource.ext.ClientBundleFields;
 import org.gwtproject.resource.ext.ClientBundleRequirements;
@@ -24,8 +23,9 @@ import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.ext.SupportsGeneratorResultCaching;
 import org.gwtproject.resource.rg.ImageBundleBuilder.Arranger;
 import org.gwtproject.resource.rg.ImageBundleBuilder.ImageRect;
-import org.gwtproject.resource.shared.ImageResource.ImageOptions;
-import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.impl.ImageResourcePrototype;
 import org.gwtproject.safehtml.shared.UriUtils;
 
 import com.google.gwt.core.ext.BadPropertyValueException;

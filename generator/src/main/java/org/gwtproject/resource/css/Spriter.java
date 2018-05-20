@@ -26,9 +26,9 @@ import org.gwtproject.resource.css.ast.CssRule;
 import org.gwtproject.resource.css.ast.CssSprite;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.ImageResource.ImageOptions;
-import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.ImageResource.RepeatStyle;
 
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.typeinfo.JClassType;

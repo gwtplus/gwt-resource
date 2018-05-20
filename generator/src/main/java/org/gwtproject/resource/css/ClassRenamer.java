@@ -21,7 +21,7 @@ import org.gwtproject.resource.css.ast.CssDef;
 import org.gwtproject.resource.css.ast.CssSelector;
 import org.gwtproject.resource.css.ast.CssStylesheet;
 import org.gwtproject.resource.css.ast.CssVisitor;
-import org.gwtproject.resource.shared.CssResource.ClassName;
+import org.gwtproject.resources.client.CssResource.ClassName;
 
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.typeinfo.JMethod;

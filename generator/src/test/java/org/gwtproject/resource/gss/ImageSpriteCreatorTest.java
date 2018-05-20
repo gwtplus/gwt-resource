@@ -13,7 +13,6 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
 package org.gwtproject.resource.gss;
 
 import static org.mockito.Matchers.any;
@@ -28,9 +27,9 @@ import com.google.gwt.core.ext.typeinfo.JClassType;
 import com.google.gwt.core.ext.typeinfo.JMethod;
 import com.google.gwt.core.ext.typeinfo.NotFoundException;
 import com.google.gwt.core.ext.typeinfo.TypeOracle;
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.ImageResource.ImageOptions;
-import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.ImageResource.RepeatStyle;
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.gss.ImageSpriteCreator.MethodByPathHelper;
 import com.google.common.css.compiler.ast.CssTree;

@@ -15,8 +15,8 @@
  */
 package org.gwtproject.resource.client;
 
-import org.gwtproject.resource.shared.DataResource;
-import org.gwtproject.resource.shared.ResourceGeneratorType;
+import org.gwtproject.resources.client.DataResource;
+import org.gwtproject.resources.client.ResourceGeneratorType;
 import org.gwtproject.resource.rg.CustomDataResourceGenerator;
 
 /**

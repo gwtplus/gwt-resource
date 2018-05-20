@@ -19,8 +19,8 @@ import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.gss.ast.CssDotPathNode;
 import org.gwtproject.resource.gss.ast.CssJavaExpressionNode;
-import org.gwtproject.resource.shared.DataResource;
-import org.gwtproject.resource.shared.ImageResource;
+import org.gwtproject.resources.client.DataResource;
+import org.gwtproject.resources.client.ImageResource;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableList;

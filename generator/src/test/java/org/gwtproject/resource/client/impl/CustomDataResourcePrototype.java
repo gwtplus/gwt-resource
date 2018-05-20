@@ -16,6 +16,7 @@
 package org.gwtproject.resource.client.impl;
 
 import org.gwtproject.resource.client.CustomDataResource;
+import org.gwtproject.resources.client.impl.DataResourcePrototype;
 import org.gwtproject.safehtml.shared.SafeUri;
 
 /**

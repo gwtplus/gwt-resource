@@ -18,13 +18,13 @@ package org.gwtproject.resource.client;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
 
-import org.gwtproject.resource.shared.CssResource;
-import org.gwtproject.resource.shared.CssResource.Import;
-import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
-import org.gwtproject.resource.shared.CssResource.Shared;
-import org.gwtproject.resource.shared.DataResource;
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.Source;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.Import;
+import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.CssResource.Shared;
+import org.gwtproject.resources.client.DataResource;
+import org.gwtproject.resources.client.ImageResource;
 
 /**
  * Contains various full-stack tests of the CssResource system.

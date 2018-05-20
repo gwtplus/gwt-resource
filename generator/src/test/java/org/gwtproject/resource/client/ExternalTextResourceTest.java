@@ -15,11 +15,11 @@
  */
 package org.gwtproject.resource.client;
 
-import org.gwtproject.resource.shared.ExternalTextResource;
-import org.gwtproject.resource.shared.ResourceCallback;
-import org.gwtproject.resource.shared.ResourceException;
-import org.gwtproject.resource.shared.Source;
-import org.gwtproject.resource.shared.TextResource;
+import org.gwtproject.resources.client.ClientBundleWithLookup;
+import org.gwtproject.resources.client.ExternalTextResource;
+import org.gwtproject.resources.client.ResourceCallback;
+import org.gwtproject.resources.client.ResourceException;
+import org.gwtproject.resources.client.TextResource;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.DoNotRunWith;

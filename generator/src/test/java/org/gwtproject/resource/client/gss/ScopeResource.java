@@ -16,9 +16,9 @@
 
 package org.gwtproject.resource.client.gss;
 
-import org.gwtproject.resource.client.ClientBundle;
-import org.gwtproject.resource.shared.CssResource;
-import org.gwtproject.resource.shared.CssResource.Shared;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.Shared;
 
 /**
  * ClientBundle that contains several CssResource for testing different scopes.

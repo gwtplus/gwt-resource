@@ -20,7 +20,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.gwt.core.ext.typeinfo.JClassType;
-import org.gwtproject.resource.shared.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import com.google.common.css.compiler.ast.CssClassSelectorNode;
 import com.google.common.css.compiler.ast.CssTree;
 import com.google.common.css.compiler.ast.VisitController;

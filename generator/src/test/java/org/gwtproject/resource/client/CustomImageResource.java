@@ -15,8 +15,8 @@
  */
 package org.gwtproject.resource.client;
 
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.ResourceGeneratorType;
+import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.ResourceGeneratorType;
 import org.gwtproject.resource.rg.CustomImageResourceGenerator;
 
 /**

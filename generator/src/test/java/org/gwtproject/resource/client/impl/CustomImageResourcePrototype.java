@@ -16,6 +16,7 @@
 package org.gwtproject.resource.client.impl;
 
 import org.gwtproject.resource.client.CustomImageResource;
+import org.gwtproject.resources.client.impl.ImageResourcePrototype;
 import org.gwtproject.safehtml.shared.SafeUri;
 
 /**

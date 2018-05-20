@@ -17,9 +17,10 @@ package org.gwtproject.resource.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
-import org.gwtproject.resource.client.GwtCreateResource.ClassType;
-import org.gwtproject.resource.shared.Source;
-import org.gwtproject.resource.shared.TextResource;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.GwtCreateResource.ClassType;
+import org.gwtproject.resources.client.GwtCreateResource;
+import org.gwtproject.resources.client.TextResource;
 
 /**
  * Verify that nested bundles work correctly.

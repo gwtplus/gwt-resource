@@ -20,9 +20,9 @@ import static com.google.gwt.thirdparty.common.css.compiler.passes.PassUtil.ALTE
 import org.gwtproject.resource.ext.ResourceContext;
 import org.gwtproject.resource.ext.ResourceGeneratorUtil;
 import org.gwtproject.resource.gss.ast.CssDotPathNode;
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.ImageResource.ImageOptions;
-import org.gwtproject.resource.shared.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.ImageResource.RepeatStyle;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableList;

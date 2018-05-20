@@ -75,7 +75,7 @@
               <resources>
                 <resource>
                   <directory>${project.build.sourceDirectory}</directory>
-                  <include>org/gwtproject/resource/shared/**/*.java</include>
+                  <include>org/gwtproject/resources/client/**/*.java</include>
                   <filtering>false</filtering>
                 </resource>
               </resources>

@@ -15,13 +15,12 @@
  */
 package org.gwtproject.resource.client.gss;
 
-import org.gwtproject.resource.client.ClientBundle;
-import org.gwtproject.resource.shared.CssResource;
-import org.gwtproject.resource.shared.CssResource.Import;
-import org.gwtproject.resource.shared.CssResource.NotStrict;
-import org.gwtproject.resource.shared.DataResource;
-import org.gwtproject.resource.shared.ImageResource;
-import org.gwtproject.resource.shared.Source;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.Import;
+import org.gwtproject.resources.client.CssResource.NotStrict;
+import org.gwtproject.resources.client.DataResource;
+import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resource.client.gss.ScopeResource.SharedParent;
 
 /**
