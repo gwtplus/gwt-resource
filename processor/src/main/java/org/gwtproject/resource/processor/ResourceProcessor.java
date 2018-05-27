@@ -43,6 +43,6 @@ public class ResourceProcessor extends BasicAnnotationProcessor {
     Filer filer = processingEnv.getFiler();
     Types types = processingEnv.getTypeUtils();
     Elements elements = processingEnv.getElementUtils();
-    return ImmutableList.of(new ResourceBundleStep());
+    return ImmutableList.of(new ResourceBundleStep(messager, filer, types, elements));
   }
 }
